@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins:2.60.3
+    container_name: 'myjenkins'
+    volumes:
+      - myvol2:/var/jenkins_home
+    ports:
+      - '80:80'
+
+volumes:
+  myvol2:
